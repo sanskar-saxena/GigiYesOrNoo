@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You n Me</title>
+    <link rel="stylesheet" href="partner.css">
+    <button tabindex="-1" id="bocchi2">NO</button>
+<script>
+    const button2 = document.getElementById('bocchi2');
+    let left = 40;
+    button2.addEventListener('mouseover', function() {
+      if(left == 40){
+        left = 35;
+      }else{
+        left = 40;
+      }
+      this.style.left = left + '%';
+    });
+    if (window.matchMedia("(max-width: 700px)").matches){
+      let left = 30;
+      button2.addEventListener('mouseenter', function() {
+      if(left == 30){
+        left = 15;
+      }else{
+        left = 30;
+      }
+      this.style.left = left + '%';
+    });
+    button2.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    });
+    }
+</script>
+</head>
+<body class="whole">
+<p class="heading">Will you Marry me?</p>
+<img class="pic" src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif" alt="">
+<title>Bocchi</title>
+<button id="bocchi1" onclick="openModal()">YES BBY!</button>
+
+<dialog id="dialog">
+    <img  class="pic1" src="pic.jpg" width="210px" height="250px" alt="">
+    <br/>
+    <center><p>YAYY ! LOVE U POODI</p></center>
+    
+    <button onclick="closeModal()" class="right">close ><</3></button>
+</dialog>
+
+<script>
+    var dialog = document.getElementById("dialog"); 
+
+    function openModal() { 
+        dialog.showModal();
+    } 
+
+    function closeModal() { 
+        dialog.close(); 
+    }
+</script>
+</body>
+</html>
