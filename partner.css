@@ -23,7 +23,7 @@ button{
 #bocchi2 {
     position: absolute;
      left: 45%;
-      top: 511px;
+      top: 600px;
       
       /* top: 521px;
     left: 53%; */
@@ -46,7 +46,7 @@ button{
     
 #bocchi1 {
     position: fixed;
-    top: 521px;
+    top: 611px;
     left: 53%;
     transform: translate(-50%, -50%);
 }
